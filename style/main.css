@@ -8,11 +8,11 @@ body {
     color: #333333;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1  {
+h1 {
     font-size: 44px;
     line-height: 55px;
     text-align: center;
@@ -41,34 +41,32 @@ h3 {
     margin: 0 auto;
 }
 
-.container-wrapper{
+.container-wrapper {
     padding: 0 10px;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-header{
+header {
     padding: 18px;
-
 }
 
-header .container-wrapper{
+header .container-wrapper {
     align-items: center;
     justify-content: space-between;
 }
 
-header nav a{
+header nav a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
     color: #404040;
-
 }
 
-header nav{
+header nav {
     gap: 34px;
 }
 
@@ -119,10 +117,10 @@ header nav{
 
 .btn {
     color: #47474F;
-    background:  transparent;
+    background: transparent;
     border: 1px solid;
     border-bottom-width: 2px;
-    padding: 13px 34px 20px ;
+    padding: 13px 34px 20px;
     display: block;
     margin: 0 auto;
 }
@@ -138,6 +136,11 @@ header nav{
     margin: 28px auto 43px;
 }
 
+img #process {
+    max-width: 127px;
+    height: 119px;
+}
+
 .sec-3-img {
     padding: 50px 86px;
     background: #F5F5F5;
@@ -146,7 +149,7 @@ header nav{
     display: block;
 }
 
-#process p{
+#process p {
     font-size: 15px;
     line-height: 22px;
     text-align: center;
