@@ -33,11 +33,14 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
+ h3 {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
+}
+
+#process h3{
     margin-bottom: 20px;
 }
 
@@ -52,7 +55,6 @@ h3 {
 
 .d-flex {
     display: flex;
-
 }
 
 header {
@@ -62,7 +64,6 @@ header {
 header .container-wrapper {
     align-items: center;
     justify-content: space-between;
-
 }
 
 /*nav {
@@ -88,13 +89,10 @@ header nav a {
     line-height: 20px;
     text-transform: uppercase;
     color: #404040;
-
 }
-
 .nav header nav a{
     row-gap: 34px;
 }
-
 .burger {
     display: flex;
     display: none;
@@ -105,14 +103,12 @@ header nav a {
     width: 30px;
     height: 18px;
 }
-
 .burger span {
     height: 2px;
     width: 80%;
     transform: scale(1);
     background-color: #333333;
 }
-
 .burger:before, .burger:after {
     content:'';
     position: absolute;
@@ -121,29 +117,20 @@ header nav a {
     background-color: #333333;
     transition: all 0.3s  ease 0s;
 }
-
-
 .burger:before { top: 0 }
 .burger:after { bottom: 0 }
-
 .burger.active span{transform: scale(0) }
-
 .burger.active:before{
     top: 50%;
     transform: rotate(-45deg) translate(0,-50%);
 }
-
 .burger.active:after{
     bottom: 50%;
     transform: rotate(45deg) translate(0,50%);
 }
-
 .open {
     display: flex !important;
 }
-
-
-
 
 .sec-1 {
     background-image: url("../img/bg-1.jpg");
@@ -155,14 +142,12 @@ header nav a {
     text-align: center;
     position: relative;
 }
-
 .sec-1 p {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     opacity: 0.81;
 }
-
 .x-icon {
     position: absolute;
     bottom: -26px;
@@ -181,7 +166,6 @@ header nav a {
     padding: 60px 0;
     background: #FEFEC9;
 }
-
 .sec-2 p {
     font-size: 18px;
     line-height: 25px;
@@ -216,11 +200,21 @@ img #process {
     height: 119px;
 }
 
+
 .sec-3-img {
-    padding: 50px 86px;
-    background: #F5F5F5;
-    margin-bottom: 38px;
-    margin-left: 20px;
+     padding: 50px 86px;
+     background: #F5F5F5;
+     margin-bottom: 38px;
+     margin-left: 20px;
+ }
+
+.cards-wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-cards3{
+    width: 300px;
 }
 
 #process p {
@@ -228,17 +222,57 @@ img #process {
     line-height: 22px;
     text-align: center;
     width: 300px;
+    padding: 15px;
+}
+
+#projects{
+    background: #F5F5F5;
+    padding: 79px 0 89px;
+}
+
+#projects img{
+    width: 300px;
+    height: 300px;
+
+
+.cards-sec4{
+    background: #FFFFFF;
+}
+
+#projects h3{
+    padding-top: 19px;
+    padding-bottom: 4px;
+}
+
+#projects p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 21px;
+}
+
+#projects .line {
+    background: rgba(0, 0, 0, 0.09);
+    height: 2px;
+    width: 80px;
+    margin: 28px auto 43px;
+}
+
+.sec-4-img {
+    width: 300px;
+
+}
+
 }
 
 footer {
     background: #000000;
     padding: 69px 0 75px;
 }
-
 footer .container{
     max-width: 546px;
 }
-
 input, textarea{
     display: block;
     width: 100%;
@@ -271,15 +305,11 @@ input, textarea{
         line-height: 15px;
         text-transform: uppercase;
         color: #404040;
-
     }
-
-
-
 }
 
 
-@media (min-width:768px){
+@media (min-width:1024px){
     header img {
         max-width: 155px;
         height: 70px;
@@ -298,9 +328,10 @@ input, textarea{
         gap: 34px;
     }
 
-    nav {
-        flex-direction: inherit;
+    .cards-wrapper{
+        flex-direction: row;
     }
+
 }
 
 
