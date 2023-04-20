@@ -257,16 +257,14 @@ input, textarea{
     nav   {
         display: flex;
         flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        bottom: 0;
+        position: absolute;
+        height: 79px;
+        width: 50%;
         right: 0;
-        left: 0;
+
         z-index: 50;
         overflow-y: auto;
-        padding: 50px 40px;
+        padding: 8px 50px;
         background-color: #FEFEC9;
         font-family: 'Montserrat', sans-serif;
         font-size: 8px;
