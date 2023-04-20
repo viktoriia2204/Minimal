@@ -14,13 +14,19 @@
 <header>
     <div class="container">
         <div class="container-wrapper d-flex">
-            <img src="./img/logo.png" alt="logo" width="155" height="70">
+            <img src="./img/logo.png" alt="logo">
             <nav class="d-flex">
                 <a href="#process">process</a>
                 <a href="#projects">projects</a>
                 <a href="#team">team</a>
                 <a href="#contact">contact</a>
             </nav>
+
+            </nav>
+            <div class="burger">
+                <span></span>
+            </div>
+
         </div>
     </div>
 </header>
@@ -90,6 +96,24 @@
     <section></section>
 </main>
 <footer id="contact">
+    <div class="container">
+        <form action="#">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Budget">
+            <input type="text">
+        </form>
+
+    </div>
+
 </footer>
+
+<script>
+    document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav').classList.toggle('open');
+    })
+</script>
+
 </body>
 </html>
