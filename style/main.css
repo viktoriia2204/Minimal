@@ -33,7 +33,7 @@ h2 {
     text-transform: uppercase;
 }
 
- h3 {
+h3 {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -184,6 +184,12 @@ header nav a {
     margin: 0 auto;
 }
 
+.btn:hover{
+    background: #47474F;
+    color: #FEFEC9;
+    border-color: #FEFEC9;
+}
+
 #process {
     padding: 79px 0 74px;
 }
@@ -205,7 +211,6 @@ img #process {
      padding: 50px 86px;
      background: #F5F5F5;
      margin-bottom: 38px;
-     margin-left: 20px;
  }
 
 .cards-wrapper{
@@ -261,8 +266,27 @@ img #process {
 
 .sec-4-img {
     width: 300px;
-
 }
+
+#team img {
+    width: 220px;
+    height: 220px;
+}
+
+#team h3{
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+#team p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 21px;
+}
+
+
 
 }
 
@@ -271,18 +295,72 @@ footer {
     padding: 69px 0 75px;
 }
 footer .container{
-    max-width: 546px;
+    max-width: 564px;
 }
 input, textarea{
     display: block;
     width: 100%;
     font-size: 17px;
     line-height: 22px;
+    font-family: 'Vollkorn', sans-serif;
     font-style: italic;
+    color: #FFFFFF;
+    padding: 18px 30px 17px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder, textarea::placeholder{
+    color: #FFFFFF;
+}
+
+input:nth-of-type(odd) {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+texterea{
+    resize: none;
+    height: 127px;
+}
+
+form .btn-2{
+    margin-top: 22px;
 
 }
 
-@media (max-width:767px) {
+.btn-2{
+    font-family: 'Vollkorn', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #8BCAC3;
+    border-color: #8BCAC3;
+    padding: 15px 34px 16px;
+    display: block;
+    margin: 0 auto;
+    background: #000000;
+    max-width: 210px;
+    width: 100%;
+}
+
+
+
+.btn-2:hover{
+    background: #7EC4BD;
+    color: #000000;
+    border-color: #000000;
+}
+@media (max-width:766px) {
 
     .burger {
         display: flex
@@ -309,7 +387,8 @@ input, textarea{
 }
 
 
-@media (min-width:1024px){
+
+@media (min-width:767px){
     header img {
         max-width: 155px;
         height: 70px;
@@ -330,7 +409,17 @@ input, textarea{
 
     .cards-wrapper{
         flex-direction: row;
+        gap: 20px;
     }
+    #projects p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        width: 300px;
+        padding-bottom: 21px;
+    }
+
+
 
 }
 
