@@ -172,6 +172,7 @@ header nav a {
     text-align: center;
     color: #47474F;
     margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .btn {
@@ -216,6 +217,8 @@ img #process {
 .cards-wrapper{
     flex-direction: column;
     align-items: center;
+    max-width: 940px;
+    justify-content: center;
 }
 
 .cont-cards3{
@@ -235,10 +238,10 @@ img #process {
     padding: 79px 0 89px;
 }
 
-#projects img{
+#projects img {
     width: 300px;
     height: 300px;
-
+}
 
 .cards-sec4{
     background: #FFFFFF;
@@ -268,6 +271,17 @@ img #process {
     width: 300px;
 }
 
+#team{
+    padding: 79px 0 89px;
+}
+
+#team .line {
+    background: rgba(0, 0, 0, 0.09);
+    height: 2px;
+    width: 80px;
+    margin: 28px auto 43px;
+}
+
 #team img {
     width: 220px;
     height: 220px;
@@ -282,21 +296,144 @@ img #process {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    width: 300px;
-    padding-bottom: 21px;
+    width: 220px;
+    padding-bottom: 29px;
+}
+
+.svg-cont {
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.svg {
+    width: 29px;
+    height: 14px;
+}
+
+#sec-6 {
+    background: #F5F5F5;
+    padding: 69px 0 98px;
+}
+
+.sec-6-img {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.sec-6-img-small {
+    width: 64px;
+    height: 64px;
+    margin: 24px auto 10px;
+    display: block;
+}
+
+#sec-6 .line {
+    background: rgba(0, 0, 0, 0.09);
+    height: 2px;
+    width: 80px;
+    margin: 28px auto 43px;
+}
+
+.blok1 {
+    width: 335px;
+}
+
+#sec-6 .d-flex{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1 {
+    width: 338px;
+}
+
+.p2 {
+    width: 309px;
+    padding-right: 70x;
+}
+
+#sec-6 p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    color: #333333;
+
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ABABAB;
+}
+
+#sec-7 {
+    background-image: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 79px 0 75px;
+    text-align: center;
+}
+
+.sec7flex {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.con7mob{
+    margin-bottom: 25px;
+  }
+
+#sec-7 .line {
+    background: rgba(0, 0, 0, 0.09);
+    height: 2px;
+    width: 80px;
+    margin: 28px auto 63px;
+}
+
+.sec-7-svg {
+    flex-direction: column;
+}
+
+.sec-7-img {
+    width: 195px;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+#sec-7 p {
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #212121;
+    width: 178px;
+}
+
+#sec-7 h3{
+    margin-bottom: 20px;
 }
 
 
-
-}
 
 footer {
     background: #000000;
     padding: 69px 0 75px;
 }
+
 footer .container{
-    max-width: 564px;
+    max-width: 370px;
 }
+
 input, textarea{
     display: block;
     width: 100%;
@@ -326,13 +463,30 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-texterea{
+textarea{
     resize: none;
     height: 127px;
 }
 
 form .btn-2{
     margin-top: 22px;
+
+}
+
+footer img {
+    margin: 0 auto;
+    display: block;
+    width: 43px;
+    height: 46px;
+    margin-bottom: 14px;
+    margin-top: 37px;
+}
+
+footer p {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
 
 }
 
@@ -408,20 +562,56 @@ form .btn-2{
     }
 
     .cards-wrapper{
-        flex-direction: row;
+        flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px;
     }
-    #projects p {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        width: 300px;
-        padding-bottom: 21px;
-    }
-
 
 
 }
 
+@media(min-width:1024px) {
+
+    .cards-wrapper{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .sec-2 p {
+        padding: 0;
+    }
+
+    .svg-cont {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .sec-6-img {
+        margin: 0 auto;
+    }
+
+    #sec-6 .d-flex {
+        flex-direction: row;
+
+    }
+
+    #sec-6 .line {
+        height: 215px;
+        width: 2px;
+        margin: 67px 132px 98px;
+    }
+
+    .sec7flex {
+        justify-content: space-between;
+       flex-direction: row;
+    }
+
+    footer .container{
+        max-width: 564px;
+    }
+
+
+}
 
 
